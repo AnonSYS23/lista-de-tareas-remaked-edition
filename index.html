@@ -8,41 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <nav class="navbar">
-                <div class="brand">
-                    <h2><span>List</span>maker</h2>
-                </div>
-                <ul class="menu">
-                    <li><a href="#" class="active">Explorar plantillas</a></li>
-                    <li><a href="#">Cuenta</a></li>
-                    <li><a href="#">Actualizar a Pro</a></li>
-                    <li><a href="#">Ajustes</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <div class="task-info">
-                <h1>Bienvenido <span>Usuario</span>!</h1>
-                <p>Que desea recordar aqui que sea importante?</p>
-                <a download href="/example/tasks.docx"><button class="download-list">Descarga todas tu tareas anteriores aqui!</button></a>
-                <button type="submit">Crear nueva tarea</button>
-                <div id="lista-de-tareas">
-                    <!--Tareas-->
-                </div>
-            </div>
-        </main>
-        <div>
-            <div class="task-content">
-                <div class="container">
-                    <h1>Mis tareas activas</h1>
-                    <input type="text" id="ingresar-tarea" placeholder="Ingresa una tarea nueva">
-                </div>
-            </div>
+    <main class="contenedor">
+        <h1>Mis Tareas</h1>
+        <input type="text" id="ingresar-tarea" placeholder="Ingresa una tarea">
+        <button type="submit">Crear Tarea</button>
+        <div id="lista-de-tareas">
+            <!--Tareas-->
         </div>
-    </div>
+    </main>
+    <script src="/script/app.js"></script>
 </body>
 </html>
